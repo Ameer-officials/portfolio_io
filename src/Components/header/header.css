@@ -1,0 +1,292 @@
+/* HEADER CSS */
+.header {
+  width: 100vw;
+  height: 13vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+.logo {
+  background-position: center;
+  background-size: cover;
+  width: 5rem;
+  height: 5rem;
+  border: 2px solid rgb(153 72 208);
+  box-shadow: 1px 0.8px 2rem rgb(153 72 208);
+  border-radius: 50%;
+  animation: logo 1s;
+}
+.backdrop {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.902);
+  width: 100%;
+  height: 190vh;
+  z-index: 1;
+  display: none;
+  animation: all 0.5s;
+}
+
+.humburger {
+  display: none;
+}
+@keyframes all {
+  from {
+    transform: translateX(-200px);
+  }
+}
+@keyframes logo {
+  from {
+    transform: translateX(-400px);
+  }
+}
+
+.header-links-i {
+  margin: 25px;
+  font-size: large;
+  margin-right: 0px;
+  color: white;
+}
+
+.header-links a:hover {
+  color: rgb(153 72 208);
+  padding-bottom: 5px;
+  border-bottom: 3px solid rgb(153 72 208);
+}
+
+.burger,
+.close {
+  display: none;
+  color: ivory;
+  font-size: larger;
+  margin: 25px;
+  font-size: large;
+  margin-right: 0px;
+  color: white;
+  cursor: pointer;
+}
+
+
+
+/* HOME CSS */
+.home {
+  width: 100vw;
+  height: 87vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: whitesmoke;
+  overflow-x: hidden;
+}
+
+.home-left-content {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  animation: top 1.3s ease-in-out;
+}
+@keyframes top {
+  from {
+    transform: translateY(50px);
+  }
+}
+.button-nav {
+  margin-top: 20px;
+}
+.button-nav-hire,
+.button-nav-resume {
+  padding: 5px 15px;
+  color: whitesmoke;
+
+  margin: 0px 15px;
+}
+/* .working-boy {
+  margin-right: 10px;
+}
+.working-boy video {
+  box-shadow: 5px 5px 20px 7px rgb(153 72 208);
+  height: 600px;
+  border-radius: 50px;
+} */
+.about-span {
+  color: rgba(255, 241, 241, 0.501);
+}
+.dev-span {
+  font-size: 20px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.648);
+}
+.h1-span {
+  font-size: 40px;
+  text-transform: uppercase;
+  animation: h1 2s;
+}
+
+/* FORM CSS */
+.form {
+  overflow-x: hidden;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.formjs {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(21, 19, 19, 0.699);
+}
+
+.form-content {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  top: 10vh;
+}
+.p-flex {
+  display: flex;
+}
+.p-flex p {
+  margin-left: 0.3rem;
+  font-size: x-large;
+}
+
+.p-flex span {
+  width: 10px;
+}
+.p-flex p:hover {
+  cursor: default;
+  transform: translateY(-10px);
+  transition: 0.3s ease-out;
+}
+textarea::-webkit-scrollbar {
+  width: 10px;
+}
+.about-link{
+  display: none;
+}
+
+/* Track */
+textarea::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px var(--sec-color);
+  border-radius: 20px;
+}
+
+/* Handle */
+body::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+  border-radius: 20px;
+}
+
+/* INPUT CSS */
+.start-field {
+  background: transparent;
+  border: 2px solid white;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+.start-field:hover {
+  box-shadow: 5px 5px 20px 7px rgb(153 72 208);
+  background-color: rgb(206, 151, 243);
+}
+.start-field::placeholder {
+  color: white;
+  font-size: 18px;
+}
+.fieldName {
+  background: transparent;
+  padding: 10px;
+  margin: 10px;
+  font-size: 18px;
+  border-bottom: 2px solid rgb(206, 151, 243);
+  color: white;
+}
+.fieldName::placeholder {
+  color: white;
+  font-size: 18px;
+}
+.hire-form {
+  display: flex;
+  flex-direction: column;
+}
+.submit-btn {
+  background-color: rgb(206, 151, 243) !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+@media only screen and (max-width: 600px) {
+  textarea {
+    width: 20rem;
+    height: 15rem;
+  }
+  .form-content {
+    top: 13vh;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .p-flex p {
+    font-size: larger;
+  }
+}
+@media only screen and (max-width: 530px) {
+  .home {
+    height: 60vh;
+  }
+  .dev-span {
+    font-size: 15px;
+  }
+  .button-nav-hire,
+  .button-nav-resume {
+    width: 9rem;
+    margin: 0.6rem;
+  }
+  .h1-span {
+    font-size: 26px;
+  }
+
+}
+@media only screen and (max-width: 530px) {
+  .header {
+    padding-top: 1rem;
+    justify-content: space-around;
+  }
+  .humburger {
+    display: block;
+  }
+
+
+  .header-links {
+    position: absolute;
+    top: -400px;
+    display: flex;
+    flex-direction: column;
+    z-index: 4;
+  }
+
+  .burger {
+    display: block;
+  }
+  .humburger {
+    margin-left: 6rem;
+  }
+ 
+}

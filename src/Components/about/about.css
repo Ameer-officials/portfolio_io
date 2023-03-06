@@ -1,0 +1,173 @@
+.about {
+  height: 87vh;
+}
+.about-back {
+  position: absolute;
+  width: 30vw;
+  height: 80vh;
+  right: 20vh;
+  background-color: rgb(144, 108, 196);
+  border-radius: 3rem;
+}
+.about-profile {
+  position: absolute;
+  width: 60vw;
+  height: 65vh;
+  background-color: rgba(224, 224, 223, 0.904);
+  border-radius: 3rem;
+  left: 20vw;
+  top: 21vh;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* transform: translate(-100vw); */
+  animation: profile 2s ease;
+  /* backdrop-filter: blur(10px); */
+}
+@keyframes profile {
+  0% {
+    transform: translate(-400px, -400px);
+  }
+  /* 25%{
+        transform: translate(-200px , -200px);
+    } */
+  /* 100%{
+        transform: translate(-100vw);
+    }
+     */
+}
+.about-web {
+  position: absolute;
+
+  width: 7vw;
+  height: 50vh;
+  background-color: rgb(144, 108, 196);
+  left: -6vh;
+  border-radius: 3rem;
+  top: 6vh;
+  z-index: 11;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: ivory;
+}
+.avtar img {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  /* background-color: red; */
+  margin: 5.7rem;
+}
+.vl {
+  border-left: 0.4rem solid rgba(45, 44, 45, 0.547);
+  height: 50vh;
+}
+.about-profile-content {
+  margin: 1rem;
+}
+.about-profile-content h3 {
+  padding: 2rem 0;
+}
+.about-profile-content p {
+  font-size: larger;
+  color: rgba(4, 4, 4, 0.91);
+}
+.about-profile-content .dev {
+  font-size: x-large;
+}
+.about-profile-content h4{
+    padding: 1rem 0;
+}
+@media only screen and (max-width: 600px) {
+    .about{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 89vh;
+    }
+    .about-web{
+        display: none;
+    }
+    .about-back{
+        display: none;
+    }
+    .about-profile{
+        position: static;
+        width: 90vw;
+        height: 87vh;
+        margin-top: 3rem ;
+        animation: none;
+        display: flex;
+        flex-direction: column;
+        z-index: 0;
+        
+    }
+    .avtar img {
+        width: 10rem;
+        height: 10rem;
+        border-radius: 50%;
+        /* background-color: red; */
+        margin: 1rem;
+      }
+      .vl {
+        border-left: none ;
+        border-bottom: 0.4rem solid rgba(45, 44, 45, 0.547);
+        width: 50vw;
+        height: 1rem;
+      }
+      .about-profile-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .about-profile-content p {
+        text-align: center;
+        font-size: medium;
+        
+      }
+      .about-profile-content h3 {
+        padding: 1rem 0;
+      }
+
+}
+@media only screen and (max-width: 824px) {
+
+    .about-web{
+        display: none;
+    }
+    .about-back{
+        display: none;
+    }
+    .about-profile{
+        position: static;
+        width: 90vw;
+        height: 87vh;
+        margin-top: 3rem ;
+        animation: none;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .vl {
+        border-left: none ;
+        border-bottom: 0.4rem solid rgba(45, 44, 45, 0.547);
+        width: 50vw;
+        height: 1rem;
+      }
+      .about-profile-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .about-profile-content p {
+        text-align: center;
+        font-size: medium;
+        
+      }
+}

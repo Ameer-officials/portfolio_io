@@ -1,0 +1,134 @@
+/* PROJECT ! */
+.project-1{
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to bottom left, #33ccff 0%, #ff99cc 100%);    
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.top{
+  font-size: 50px;
+  font-weight: 600;
+  padding: 70px 0;
+  background: -webkit-linear-gradient(rgb(178 178 178), #591b85);
+  -webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.center{
+  position: relative;
+  width: 351px;
+  height: 275px;
+  border-radius: 10px;
+  background-color: rgb(20, 18, 18);
+  box-shadow: 5px 5px 5px rgb(50, 47, 47);
+}
+.row_1{
+  color: ghostwhite;
+  background-image: linear-gradient(to right , rgb(57 132 211),rgb(16 112 213));
+  height: 100px;
+  position: relative;
+  top: 30px;
+  right: 22px;
+  width: 400px;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 33px;
+  border-radius: 8px;
+  font-weight: 600;
+  align-items: center;
+}
+
+span{
+  color: white;
+}
+.disable{
+  background-color: #444444 ;
+  pointer-events: none;
+}
+/* button{
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 17px;
+  background-color: white;
+  border-radius: 8px;
+}
+button:hover{
+  background-color: rgb(94, 158, 226);
+  color: white;
+  border: 2px solid white;
+}
+button:active{
+  background: linear-gradient(to bottom left, #33ccff 0%, #ff99cc 100%); }
+.bottom{
+  position: relative;
+  top: 90px;
+  margin-left: 19px;
+  width: 88px;
+  padding: 6px;
+} */
+.pionts{
+  margin-left: 10px;
+}
+
+
+
+/* PROJECT 2 */
+.project-2{
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+    height: 80vh;
+    /* box-shadow: 2px 2px 20px rgb(153 72 208); */
+  }
+  
+
+  .Box {
+    width: 5rem;
+    height: 5rem;
+    border: 1px solid ivory;
+    color: rgb(153 72 208);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    border-radius: 0.9rem;
+    font-weight: 600;
+  }
+  /* .Box p{
+    text-shadow: 4px 4px 10px rgb(158, 158, 158); */
+    
+  /* } */
+  
+  .box-line {
+    display: flex;
+    /* user-select: none; */
+  }
+  .journal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+.journal img{
+  width: 80vw;
+  height: 80vh;
+  padding-bottom: 1rem;
+}
+@media only screen and (max-width: 530px) {
+.journal h1{
+font-size: 2.4rem;
+
+
+}
+.journal img{
+  width: 90vw;
+    height: 40vh;
+}
+}
+
+
+  

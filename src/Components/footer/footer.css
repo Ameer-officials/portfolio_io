@@ -1,0 +1,148 @@
+/* FOOTER CSS */
+.footer {
+  height: 60vh;
+  width: 100%;
+  background-color: #25262a;
+  display: flex;
+  justify-content: space-around;
+  overflow-x: hidden;
+}
+.call-footer,
+.nav-footer {
+  color: rgb(225, 221, 221);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.call-footer h1 {
+  font-size: xx-large;
+  font-weight: 400;
+  margin-bottom: 4rem;
+}
+.call-footer h2 {
+  margin-bottom: 3.4rem;
+  font-weight: 400;
+}
+.mern-links {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+}
+.mern-links a img {
+  width: 4.1rem;
+  height: 4rem;
+}
+.express,
+.node {
+  background-color: white;
+}
+.mern-link {
+  padding: 5px;
+  margin: 10px;
+  margin-left: 0px;
+  border-radius: 50%;
+}
+.call-footer h2 a {
+  color: rgb(153 72 208);
+}
+.call-footer h2 a:hover {
+  border-bottom: 3px solid rgb(153 72 208);
+}
+.mern-links .react:hover {
+  border-bottom: 3px solid rgb(0, 94, 128);
+}
+.mern-links .mongodb:hover {
+  border-bottom: 3px solid green;
+}
+.name-span {
+  color: rgb(164, 164, 164);
+}
+
+.call-footer p {
+  font-size: x-large;
+  font-weight: 400;
+}
+.copy-span {
+  color: rgb(123, 122, 122);
+  font-size: small;
+  margin-left: 4rem;
+}
+.copy-span-2 {
+  color: rgb(123, 122, 122);
+  font-size: small;
+  margin-bottom: 1rem;
+}
+
+.nav-footer h2 {
+  margin-bottom: 1rem;
+  color: rgb(149, 148, 148);
+  font-weight: 500;
+}
+.nav-footer h1 {
+  margin-bottom: 1rem;
+}
+.nav-footer h1 a {
+  font-size: xx-large;
+  font-weight: 400;
+  color: rgb(225, 221, 221);
+}
+.nav-footer-links {
+  margin-left: 20px;
+  margin-bottom: 7rem;
+}
+.nav-footer-links li {
+  margin: 0 10px;
+}
+.nav-footer-links li a:active {
+  color: green;
+}
+.nav-footer-links li a:active::before {
+  content: "<<";
+}
+.nav-footer-links li a:active::after {
+  content: ">>";
+}
+.personal-link {
+  display: flex;
+}
+.personal-link li {
+  font-size: larger;
+  margin: 0 1rem;
+}
+@media only screen and (max-width: 750px) {
+  .copy-span {
+    margin-left: 1rem;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .footer {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .nav-footer-links {
+    display: none;
+  }
+ 
+  .call-footer,
+  .nav-footer {
+    justify-content: center;
+    align-items: center;
+  }
+  .call-footer h1 {
+    display: none;
+  }
+  .call-footer h2 {
+    margin-bottom: 2rem;
+  }
+
+  .hide {
+    display: none;
+  }
+  .copy-span {
+    margin-left: 0.1rem;
+  }
+  .call-footer p {
+    font-size: large;
+  }
+}
