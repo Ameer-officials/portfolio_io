@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Ameer.io/static/css/main.97d1363c.css",
+    "main.js": "/Ameer.io/static/js/main.9e3da51f.js",
+    "index.html": "/Ameer.io/index.html",
+    "main.97d1363c.css.map": "/Ameer.io/static/css/main.97d1363c.css.map",
+    "main.9e3da51f.js.map": "/Ameer.io/static/js/main.9e3da51f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.97d1363c.css",
+    "static/js/main.9e3da51f.js"
+  ]
+}
